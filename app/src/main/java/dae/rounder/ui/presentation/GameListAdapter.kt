@@ -14,7 +14,7 @@ class GameListAdapter(private val viewLifecycleOwner: LifecycleOwner, private va
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GameListHolder {
         val binding = HolderGameBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        binding.lifecycleOwner = viewLifecycleOwner
+//        binding.lifecycleOwner = viewLifecycleOwner
         return GameListHolder(vm, binding)
     }
 

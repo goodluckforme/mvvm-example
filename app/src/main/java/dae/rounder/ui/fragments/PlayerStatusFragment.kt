@@ -23,7 +23,7 @@ class PlayerStatusFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentPlayerStatusBinding.inflate(inflater, container, false)
         binding.vm = playerStatusViewModel
-        binding.lifecycleOwner = viewLifecycleOwner
+//        binding.lifecycleOwner = viewLifecycleOwner
 
         playerStatusViewModel.watch(arguments?.getLong(Constants.INTENT_KEY_GAME_ID) ?: 0L, arguments?.getLong(Constants.INTENT_KEY_PLAYER_ID) ?: 0L)
 

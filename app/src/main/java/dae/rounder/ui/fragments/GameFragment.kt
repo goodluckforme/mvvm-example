@@ -33,7 +33,7 @@ class GameFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentGameBinding.inflate(inflater, container, false)
         binding.vm = gameViewModel
-        binding.lifecycleOwner = viewLifecycleOwner
+//        binding.lifecycleOwner = viewLifecycleOwner
 
         layoutManager = LinearLayoutManager(requireContext())
 

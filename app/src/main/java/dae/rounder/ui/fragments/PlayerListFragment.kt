@@ -35,7 +35,7 @@ class PlayerListFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentPlayerListBinding.inflate(inflater, container, false)
         binding.vm = playerListViewModel
-        binding.lifecycleOwner = viewLifecycleOwner
+//        binding.lifecycleOwner = viewLifecycleOwner
 
         layoutManager = LinearLayoutManager(requireContext())
 
