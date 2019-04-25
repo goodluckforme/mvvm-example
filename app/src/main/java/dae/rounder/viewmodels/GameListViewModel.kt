@@ -7,10 +7,7 @@ import dae.rounder.database.entity.Game
 import dae.rounder.events.OnGameClickedEvent
 import dae.rounder.repositories.GameRepository
 import dae.rounder.utils.LogUtils
-import kotlinx.coroutines.Deferred
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import org.greenrobot.eventbus.EventBus
 import org.koin.standalone.KoinComponent
 
@@ -29,6 +26,7 @@ class GameListViewModel(private val gameRepository: GameRepository): ViewModel()
                 }
             }
         }
+
     }
 
     fun onGameClicked(view: View, game: Game) {
