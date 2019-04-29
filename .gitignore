@@ -79,3 +79,6 @@ fastlane/test_output
 fastlane/readme.md
 
 /新建文件夹/
+/release.keystore.jks
+/debug.keystore.jks
+/keystore.properties

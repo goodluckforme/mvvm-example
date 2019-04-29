@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
+
         navView.setNavigationItemSelectedListener(this)
 
         GlobalScope.launch(Dispatchers.Main) {

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+             android:padding="10dp"
+             android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <!--simple-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="简单案例"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/simpleTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_simple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                </thereisnospon.codeview.CodeView>
+
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/result"/>
+            </LinearLayout>
+            <!--delayTest-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="延迟案例 携程"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/delayTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_delayTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/delayTestResult"/>
+
+            </LinearLayout>
+            <!--delayTest2-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="延迟案例 Thread"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/delayTest2"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_delayTest2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/delayTest2Result"/>
+
+            </LinearLayout>
+            <!--runBlockingTest-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="测试 runBlocking"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/runBlockingTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_runblock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/runBlockingResult"/>
+
+            </LinearLayout>
+            <!--asyncTest-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="测试 async"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/asyncTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_asyncTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/asyncTestResult"/>
+
+            </LinearLayout>
+            <!--Job的取消操作-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="Job的取消操作"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/jobTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_jobTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jobTestResult"/>
+
+            </LinearLayout>
+            <!--异步线程安全-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="线程安全"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/safeTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_safeTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/safeTestResult"/>
+
+            </LinearLayout>
+            <!--actor-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="actor线程安全"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/actorTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_actorTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/actorTestResult"/>
+
+            </LinearLayout>
+            <!--actor-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="Channel"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/channelTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_channelTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/channelTestResult"/>
+
+            </LinearLayout>
+            <!--producerTest-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="Producer"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/producerTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_producerTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/producerTestResult"/>
+
+            </LinearLayout>
+            <!--producerTest-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="Pipeline"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/pipelineTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_pipelineTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pipelineTestResult"/>
+
+            </LinearLayout>
+            <!--selectTest-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#f00"
+                            android:padding="5dp"
+                            android:text="Select"/>
+
+                    <Button android:layout_width="wrap_content"
+                            android:text="@string/excute"
+                            android:id="@+id/selectTest"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <thereisnospon.codeview.CodeView
+                        android:id="@+id/codeview_selectTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/selectTestResult"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar android:layout_width="wrap_content"
+                 android:id="@+id/progressbar"
+                 android:visibility="invisible"
+                 android:layout_height="wrap_content"
+                 style="@style/Base.Widget.AppCompat.ProgressBar"
+                 android:layout_gravity="center"/>
+</FrameLayout>
